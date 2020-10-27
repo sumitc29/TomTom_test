@@ -1,0 +1,30 @@
+Fake News Detection
+
+Description:
+	This is an binary classification probtlem with (1,0) as output classes to find weather given news is Fake or real.
+
+Analysis from EDA:
+	Both classes are balanced
+	NUll values mostly contribute to Fake news
+	Authors are biased, (Authors have given only positives or negayives)
+	Title plays an important role
+	MOdel length of title message is 16
+
+Preporocesing Steps:
+	Filling Null with "blank" keyword
+	Removin g short words
+	Data cleaning and expanding contradictions
+	Normalizing Data
+
+Model
+	Data is linearly saperable hence used following ensamble of model using weighted ensamble
+	Logistic regression
+	Random FOrest
+	Neural net
+	Weighted ensamble (0.4*NN + 0.3*LR + 0.3*RF)
+
+Scores:
+	Accuracy 99.5 %
+	Precision 0.9862953040655326,   
+	Recall    0.9862834944917496,
+	F1 score  0.9862893421781108
